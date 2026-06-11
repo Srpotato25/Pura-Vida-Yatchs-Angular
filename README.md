@@ -1,6 +1,6 @@
 # PuraVidaYatchs
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.9.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.9. Angular-based application, which is in turn based on its mobile version with .NET 10 MAUI — C# 14.
 
 ## Development server
 
