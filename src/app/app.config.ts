@@ -3,7 +3,7 @@ import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
 import { provideHttpClient, withInterceptors } from '@angular/common/http';
-import { supabaseInterceptor } from './Payments/services/supabase.interceptor';
+import { supabaseInterceptor } from './auth/supabase.interceptor';
 
 export const appConfig: ApplicationConfig = {
   providers: [

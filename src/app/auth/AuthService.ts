@@ -1,7 +1,7 @@
 import { inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { catchError, map, Observable, of, throwError } from 'rxjs';
-import { environment } from '../../../environments/environment';
+import { environment } from '../../environments/environment';
 
 export interface datosDelUsuario {
   p_nombre: string;
@@ -38,8 +38,6 @@ export class AuthService {
     );
   }
   LoginResponse(email:string, password: string): Observable<datosLogin | null> {
-    /* const body: datosLogin = {p_email:email, p_password:password}
-    return this.http.post(`${environment.supabaseUrl}/rest/v1/rpc/registrar`, body).pipe() */
 
     const body = { p_email: email, p_password: password };
 
