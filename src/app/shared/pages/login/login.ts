@@ -1,11 +1,10 @@
 import { Component, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RouterLink } from '@angular/router';
 import { AuthService, datosLogin } from '../../../auth/AuthService';
 
 @Component({
   selector: 'login',
-  imports: [RouterLink, FormsModule],
+  imports: [FormsModule],
   templateUrl: './login.html',
   styleUrl: './login.css',
 })
