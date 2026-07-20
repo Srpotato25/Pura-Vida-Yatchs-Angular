@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+  --primary: #0277BD;
+  --primary-dark: #01579B;
+  --primary-dark-text: #FFFFFF;
+  --secondary: #4FC3F7;
+  --secondary-dark-text: #0288D1;
+  --tertiary: #006064;
+
+  --white: #FFFFFF;
+  --black: #000000;
+  --off-black: #1F1F1F;
+  --magenta: #D600AA;
+  --accent: #00BCD4;
+  --deep-ocean: #0D47A1;
+  --light-sea: #E1F5FE;
+  --midnight-blue: #191970;
+
+  --gray-100: #E3F2FD;
+  --gray-200: #BBDEFB;
+  --gray-300: #90CAF9;
+  --gray-400: #64B5F6;
+  --gray-500: #42A5F5;
+  --gray-600: #1E88E5;
+  --gray-900: #0D47A1;
+  --gray-950: #1A237E;
+}

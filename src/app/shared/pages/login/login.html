@@ -1,0 +1,77 @@
+<div class="min-vh-100 d-flex justify-content-center align-items-center BackgroundColor">
+    <div class="w-100" style="max-width: 450px;">
+        <!-- Logo -->
+        <div class="text-center mb-4">
+            <div class="card border-0 shadow-sm d-inline-block p-3 rounded-4">
+                <img
+                    src="/assets/images/logo.jpeg"
+                    alt="Logo"
+                    class="img-fluid"
+                    style="width: 150px; height: 150px; object-fit: contain;">
+            </div>
+        </div>
+
+        <!-- Título -->
+        <h1 class="text-center fw-bold text-primary">
+            Pura Vida Yachts
+        </h1>
+
+        <p class="text-center text-muted mb-4">
+            Inicia sesión para continuar
+        </p>
+
+        <!-- Formulario -->
+        <div class="card border-0 shadow-sm rounded-4">
+            <div class="card-body p-4">
+
+                <form (ngSubmit)="LoginClicked()">
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            class="form-control"
+                            placeholder="correo@ejemplo.com"
+                            name="email"
+                            required
+                            [(ngModel)]="email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">
+                            Contraseña
+                        </label>
+
+                        <input
+                            type="password"
+                            class="form-control"
+                            placeholder="Tu contraseña"
+                            name="password"
+                            required
+                            [(ngModel)]="password">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100 fw-bold py-2 mt-2">
+                        Iniciar Sesión
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Registro -->
+        <div class="text-center mt-4">
+            <span class="text-muted">
+                ¿No tienes cuenta?
+            </span>
+
+            <a
+                href="javascript:void(0)"
+                class="fw-bold text-primary ms-1"> <!-- //(click)="onRegistro()" -->
+                Regístrate
+            </a>
+        </div>
+
+    </div>
+</div>
