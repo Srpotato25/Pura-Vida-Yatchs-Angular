@@ -1,0 +1,37 @@
+<div class="flex flex-col items-center gap-6 py-6">
+  @if (ProductsComponent.cargando()) {
+  <div class="flex justify-center py-8">
+    <span class="loading loading-spinner loading-lg"></span>
+  </div>
+
+  }
+   <!-- @if (!ProductsComponent.cargando && ProductsComponent.productos.length === 0) {
+  <div class="text-center text-base-content/70">
+    No hay productos disponibles en este momento.
+  </div>
+  } -->
+</div>
+
+@if (!ProductsComponent.cargando() && ProductsComponent.productos().length > 0) {
+  <div class="grid w-full max-w-6xl grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+    @for (producto of ProductsComponent.productos(); track producto.id) {
+      <div class="card bg-base-100 w-full shadow-sm">
+        <figure class="h-48">
+          <img
+            [src]="producto.fotoUrl || 'https://placehold.co/600x400?text=Producto'"
+            [alt]="producto.nombre"
+            class="h-full w-full object-cover" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">{{ producto.nombre }}</h2>
+          <p class="text-sm text-base-content/70">{{ producto.tipoBien }} · {{ producto.marca }}</p>
+          <p class="text-sm">{{ producto.caracteristicas }}</p>
+          <div class="mt-2 flex items-center justify-between">
+            <span class="text-lg font-semibold">${{ producto.precioBase ?? 0 }}</span>
+            <button class="btn btn-primary" type="button" (click)="irAPagos(producto)">Comprar</button>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+}
