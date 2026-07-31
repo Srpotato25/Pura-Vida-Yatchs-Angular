@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { GetProductsService } from '../../../services/GetProductsService';
 
 @Component({
   selector: 'purchases-page',
@@ -6,4 +7,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   templateUrl: './purchases-page.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class PurchasesPage {}
+export class PurchasesPage {
+  ProductosComprados = inject(GetProductsService);
+}
