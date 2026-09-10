@@ -1,5 +1,5 @@
 import { inject, Injectable, signal } from '@angular/core';
-import { ProductService } from '../../auth/ProductService';
+import { ProductService } from './Product.Service';
 import { Producto } from '../interfaces/producto';
 
 @Injectable({

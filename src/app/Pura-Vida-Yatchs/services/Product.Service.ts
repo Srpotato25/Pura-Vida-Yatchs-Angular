@@ -1,14 +1,16 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { catchError, map, Observable, of } from 'rxjs';
-import { environment } from '../../environments/environment';
-import { Producto, ProductoJson } from '../Pura-Vida-Yatchs/interfaces/producto';
+import { environment } from '../../../environments/environment';
+import { Producto, ProductoJson } from '../interfaces/producto';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ProductService {
   private http = inject(HttpClient);
+
+  /* Servicio que escoje todos los productos de la BD */
 
   getProductosAsync(): Observable<Producto[]> {
     return this.http.get<ProductoJson[]>(`${environment.supabaseUrl}/rest/v1/productos?select=*`).pipe(
