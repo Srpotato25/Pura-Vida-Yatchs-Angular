@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   templateUrl: './products.html'
 })
 export class Products {
-  private readonly router = inject(Router);
+   private readonly router = inject(Router);
   ProductsComponent = inject(GetProductsService);
 
   irAPagos(producto: Producto): void {
