@@ -1,6 +1,6 @@
 import { Component, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { AuthService, datosLogin } from '../../../auth/AuthService';
+import { AuthService, datosLogin } from '../../services/Auth.Service';
 
 @Component({
   selector: 'login',

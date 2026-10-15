@@ -1,4 +1,4 @@
-import { environment } from '../../environments/environment';
+import { environment } from '../../../environments/environment';
 import { HttpInterceptorFn } from '@angular/common/http';
 
 export const supabaseInterceptor: HttpInterceptorFn = (req, next) => {

@@ -7,8 +7,8 @@ import { EmailNotificationsPage } from "./pages/main-menu-page/email-notificatio
 import { HelpPage } from "./pages/main-menu-page/help-page/help-page";
 import MainMenuPage from "./pages/main-menu-page/main-menu-page";
 import { PurchasesPage } from "./pages/main-menu-page/purchases-page/purchases-page";
-import PaymentsMenuPage from "./pages/main-menu-page/product-catalog-page/payments-menu-page/payments-menu-page";
-import SchedulePaymentsPage from "./pages/main-menu-page/product-catalog-page/payments-menu-page/schedule-payments-page/schedule-payments-page";
+import PaymentsMenuPage from "./pages/main-menu-page/payments-menu-page/payments-menu-page";
+import SchedulePaymentsPage from "./pages/main-menu-page/schedule-payments-page/schedule-payments-page";
 
 export const paymentsRoutes: Routes = [
   {
